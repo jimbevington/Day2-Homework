@@ -59,35 +59,11 @@ def number_to_full_month_name(month_num)
   end
 end
 
+# Changed to apply Slice method output of long month function (see above)
 def number_to_short_month_name(month_num)
-  case month_num
-  when 1
-    "Jan"
-  when 2
-    "Feb"
-  when 3
-    "Mar"
-  when 4
-    "Apr"
-  when 5
-    "May"
-  when 6
-    "Jun"
-  when 7
-    "Jul"
-  when 8
-    "Aug"
-  when 9
-    "Sep"
-  when 10
-    "Oct"
-  when 11
-    "Nov"
-  when 12
-    "Dec"
-  end
+  month = number_to_full_month_name(month_num)
+  return month[0..2]
 end
-
 
 def volume_of_cube(side_length)
   return side_length ** 3
