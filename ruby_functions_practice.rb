@@ -18,7 +18,7 @@ def divide(num_1, num_2)
   return num_1 / num_2
 end
 
-def length_of_string(string)
+def length_of_string(my_string) # avoid using 'string', its a named obj
    return string.length
  end
 
